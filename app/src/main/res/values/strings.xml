@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DemoCrime</string>
+    <string name="loginuser">Login</string>
+    <string name="registeruser">Register</string>
+    <string name="registeruserbutton">Register</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="loginuserbutton">Login</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="fileComplaint">File a Complaint</string>
+    <string name="dialSOS">SOS - Dial 100</string>
+
+    <array name="types_complaints">
+        <item>Harassment</item>
+        <item>Theft</item>
+        <item>Pickpocketing</item>
+        <item>Car Jacking</item>
+        <item>Robbery</item>
+        <item>Dacoity</item>
+        <item>Murder</item>
+        <item>Online Fraud</item>
+        <item>Others</item>
+    </array>
+
+    <string name="selecttype">Select the type of Crime:</string>
+    <string name="providedesc">Provide the Description: </string>
+    <string name="submit_report">Submit Report</string>
+
+</resources>
