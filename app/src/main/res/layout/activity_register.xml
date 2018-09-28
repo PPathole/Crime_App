@@ -41,7 +41,7 @@
         android:inputType="phone" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/emailRegistration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -52,7 +52,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/passwordRegistration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

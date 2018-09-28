@@ -29,5 +29,6 @@
     <string name="selecttype">Select the type of Crime:</string>
     <string name="providedesc">Provide the Description: </string>
     <string name="submit_report">Submit Report</string>
+    <string name="signout">Sign Out</string>
 
 </resources>

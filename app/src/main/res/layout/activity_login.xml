@@ -8,7 +8,7 @@
     tools:context=".login">
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/emailLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -19,7 +19,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/passwordLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
