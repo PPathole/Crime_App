@@ -1,7 +1,6 @@
 package com.pranaypathole.democrime;
 
 import android.content.Intent;
-import android.graphics.Camera;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
