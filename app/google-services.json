@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1071400538203",
+    "firebase_url": "https://crimeapp-4c0a0.firebaseio.com",
+    "project_id": "crimeapp-4c0a0",
+    "storage_bucket": "crimeapp-4c0a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071400538203:android:265491fe4292ff53",
+        "android_client_info": {
+          "package_name": "com.pranaypathole.democrime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071400538203-cnqjnn0f09lu2vrouq2in684v116o8mv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pranaypathole.democrime",
+            "certificate_hash": "64bc7350094c1ec70c1fa2a5416a21273b1d01fe"
+          }
+        },
+        {
+          "client_id": "1071400538203-i53i4sk5cf3sn9vvmh6s3r3vf1sejmnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQMffx2pSxOGj9qluKTPq42C2zj-312pU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071400538203-i53i4sk5cf3sn9vvmh6s3r3vf1sejmnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
