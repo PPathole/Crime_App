@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pranaypathole.democrime">
 
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
 
     <application
         android:allowBackup="true"
@@ -22,7 +24,8 @@
         <activity android:name=".register" />
         <activity android:name=".login" />
         <activity android:name=".homepage" />
-        <activity android:name=".complaint"></activity>
+        <activity android:name=".complaint" />
+        <activity android:name=".sosActivity"></activity>
     </application>
 
 </manifest>

@@ -20,9 +20,8 @@ public class homepage extends AppCompatActivity {
     }
 
     public void dialSos(View view){
-        Intent dialIntent = new Intent(Intent.ACTION_DIAL);
-        dialIntent.setData(Uri.parse("tel: 100"));
-        startActivity(dialIntent);
+        Intent sosIntent = new Intent(this, sosActivity.class);
+        startActivity(sosIntent);
     }
 
     @Override

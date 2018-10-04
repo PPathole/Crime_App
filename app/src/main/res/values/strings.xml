@@ -12,7 +12,7 @@
     <string name="enter_your_email">Enter your Email</string>
     <string name="enter_your_password">Enter your Password</string>
     <string name="fileComplaint">File a Complaint</string>
-    <string name="dialSOS">SOS - Dial 100</string>
+    <string name="dialSOS">SOS/Emergency</string>
 
     <array name="types_complaints">
         <item>Harassment</item>
@@ -30,5 +30,11 @@
     <string name="providedesc">Provide the Description: </string>
     <string name="submit_report">Submit Report</string>
     <string name="signout">Sign Out</string>
+    <string name="loginme">LOGIN PAGE</string>
+    <string name="registerme">REGISTER USER</string>
+    <string name="dialemergency">Dial 100</string>
+    <string name="sosmorsecode">SOS Morse Code</string>
+    <string name="flash">Turn on Flash</string>
+    <string name="contactemergency">Emergency Contact</string>
 
 </resources>
