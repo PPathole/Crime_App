@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class register extends AppCompatActivity {
 
-    EditText emailRegister, pwdRegister;
+    EditText emailRegister, pwdRegister, nameRegister, addressRegister, phoneRegister;
 
     FirebaseAuth mAuth;
     FirebaseUser mUser;
@@ -36,6 +36,9 @@ public class register extends AppCompatActivity {
 
         emailRegister = findViewById(R.id.emailRegistration);
         pwdRegister = findViewById(R.id.passwordRegistration);
+        nameRegister = findViewById(R.id.nameRegister);
+        addressRegister = findViewById(R.id.addressRegister);
+        phoneRegister = findViewById(R.id.phoneRegister);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -46,14 +49,17 @@ public class register extends AppCompatActivity {
     public void registerToLogin(View view){
 
 
-        if(emailRegister.getText().toString().equals("") && pwdRegister.getText().toString().equals("")){
-            Toast.makeText(getApplicationContext(), "Please Enter!", Toast.LENGTH_SHORT).show();
+        if(emailRegister.getText().toString().equals("") && pwdRegister.getText().toString().equals("") && nameRegister.getText().toString().equals("") && phoneRegister.getText().toString().equals("") && addressRegister.getText().toString().equals("")){
+            Toast.makeText(getApplicationContext(), "Blank fields not allowed!", Toast.LENGTH_SHORT).show();
         }
 
         else{
 
             final String email = emailRegister.getText().toString();
             final String password = pwdRegister.getText().toString();
+            final String name = nameRegister.getText().toString();
+            final String phone = phoneRegister.getText().toString();
+            final String address = addressRegister.getText().toString();
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -62,7 +68,7 @@ public class register extends AppCompatActivity {
 
                                 mUser = mAuth.getCurrentUser();
 
-                                User myUser = new User(emailRegister.getText().toString(),pwdRegister.getText().toString());
+                                User myUser = new User(emailRegister.getText().toString(),pwdRegister.getText().toString(), name, address, phone);
 
                                 rootReference.child(mUser.getUid()).setValue(myUser)
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
