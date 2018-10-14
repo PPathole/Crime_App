@@ -1,4 +1,4 @@
-# Crime_App
+# CrimeApp
 
 Full fledged Crime reporting app, where People can report crimes, use SOS(Save-Our-Soul) features which includes Morse Code, Dial Police Station, use Emergency contact and much more.
 
