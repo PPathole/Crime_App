@@ -36,5 +36,16 @@
     <string name="sosmorsecode">SOS Morse Code</string>
     <string name="flash">Turn on Flash</string>
     <string name="contactemergency">Emergency Contact</string>
+    <string name="about_developer">About Developer</string>
+    <string name="logout">Logout</string>
+    <string name="about_me">About Developer</string>
+    <string name="pranay_pathole">Pranay Pathole</string>
+    <string name="follow_me">Follow ME</string>
+    <string name="twitter">
+        <a href="https://www.twitter.com/PPathole">Twitter</a>
+    </string>
+    <string name="instagram">
+        <a href="https://instagram.com/pranaypathole">Instagram</a>
+    </string>
 
 </resources>
