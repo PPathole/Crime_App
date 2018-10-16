@@ -9,29 +9,31 @@
 
     <Button
         android:id="@+id/button3"
-        android:drawableLeft="@drawable/ic_location_city_black_24dp"
         android:layout_width="match_parent"
         android:layout_height="93dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="167dp"
+        android:background="#bd40ef"
+        android:drawableLeft="@drawable/ic_location_city_black_24dp"
+        android:drawableStart="@drawable/ic_location_city_black_24dp"
         android:onClick="complaint"
         android:text="@string/fileComplaint"
-        android:textSize="25sp"
-        android:drawableStart="@drawable/ic_location_city_black_24dp" />
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button4"
-        android:drawableLeft="@drawable/ic_landscape_black_24dp"
         android:layout_width="match_parent"
         android:layout_height="98dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="149dp"
+        android:background="#bd40ef"
+        android:drawableLeft="@drawable/ic_landscape_black_24dp"
+        android:drawableStart="@drawable/ic_landscape_black_24dp"
         android:onClick="dialSos"
         android:text="@string/dialSOS"
-        android:textSize="25sp"
-        android:drawableStart="@drawable/ic_landscape_black_24dp" />
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button2"
@@ -40,6 +42,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="51dp"
+        android:background="#bd40ef"
         android:onClick="signout"
         android:text="@string/signout" />
 

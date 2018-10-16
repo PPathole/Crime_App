@@ -9,56 +9,60 @@
 
     <Button
         android:id="@+id/sosMorsecode"
-        android:drawableLeft="@drawable/ic_warning_black_24dp"
         android:layout_width="213dp"
         android:layout_height="97dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="174dp"
+        android:background="#bd40ef"
+        android:drawableLeft="@drawable/ic_warning_black_24dp"
+        android:drawableStart="@drawable/ic_warning_black_24dp"
         android:onClick="playmorse"
         android:text="@string/sosmorsecode"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
-        android:drawableStart="@drawable/ic_warning_black_24dp" />
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/flash"
-        android:drawableLeft="@drawable/ic_flash_on_black_24dp"
         android:layout_width="213dp"
         android:layout_height="97dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="175dp"
+        android:background="#bd40ef"
+        android:drawableLeft="@drawable/ic_flash_on_black_24dp"
+        android:drawableStart="@drawable/ic_flash_on_black_24dp"
         android:text="@string/flash"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
-        android:drawableStart="@drawable/ic_flash_on_black_24dp" />
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/call100"
-        android:drawableLeft="@drawable/ic_phone_black_24dp"
         android:layout_width="210dp"
         android:layout_height="86dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="66dp"
+        android:background="#bd40ef"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
         android:onClick="dialPolice"
         android:text="@string/dialemergency"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
-        android:drawableStart="@drawable/ic_phone_black_24dp" />
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/emergencycontact"
-        android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
         android:layout_width="213dp"
         android:layout_height="97dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="55dp"
+        android:background="#bd40ef"
+        android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
+        android:drawableStart="@drawable/ic_contact_phone_black_24dp"
         android:onClick="contact"
         android:text="@string/contactemergency"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
-        android:drawableStart="@drawable/ic_contact_phone_black_24dp" />
+        android:textStyle="bold|italic" />
 </RelativeLayout>

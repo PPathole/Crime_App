@@ -55,6 +55,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="14dp"
+        android:background="#bd40ef"
         android:onClick="submitReport"
         android:text="@string/submit_report"
         android:textSize="20sp" />

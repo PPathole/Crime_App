@@ -34,6 +34,7 @@
             android:id="@+id/registermainButton"
             android:layout_width="match_parent"
             android:layout_height="116dp"
+            android:background="#bd40ef"
             android:drawableLeft="@drawable/ic_group_black_24dp"
             android:drawableStart="@drawable/ic_group_black_24dp"
             android:onClick="registerUser"

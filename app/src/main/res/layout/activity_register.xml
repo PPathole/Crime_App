@@ -69,6 +69,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="45dp"
+        android:background="#bd40ef"
         android:onClick="registerToLogin"
         android:text="@string/registeruserbutton"
         android:textSize="20sp" />
