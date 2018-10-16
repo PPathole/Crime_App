@@ -3,6 +3,7 @@ package com.pranaypathole.democrime;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -19,12 +20,19 @@ public class adminLogin extends AppCompatActivity {
         adminEmail = findViewById(R.id.adminEmail);
         adminPassword = findViewById(R.id.adminPassword);
 
+    }
+
+    public void loginAdmin(View view){
         if(adminEmail.getText().toString().equals("admin@email.com") && adminPassword.getText().toString().equals("admin")){
-            Intent i = new Intent(this, adminHome.class);
-            startActivity(i);
-            Toast.makeText(this, "Welcome Admin!", Toast.LENGTH_SHORT).show();
+            Intent adminhome = new Intent(getApplicationContext(), adminHome.class);
+            startActivity(adminhome);
+            Toast.makeText(this, "Welcome admin", Toast.LENGTH_SHORT).show();
+        }else if(adminEmail.getText().toString().equals("")){
+            Toast.makeText(this, "Blank Email Field not Allowed", Toast.LENGTH_SHORT).show();
+        }else if(adminPassword.getText().toString().equals("")){
+            Toast.makeText(this, "Enter password!", Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this, "Incorrect Credentials", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Blank fields not allowed!", Toast.LENGTH_SHORT).show();
         }
     }
 }
