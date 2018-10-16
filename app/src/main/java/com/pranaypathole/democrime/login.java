@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -16,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class login extends AppCompatActivity {
 
     EditText emailLogin, pwdLogin;
+    TextView loginAsAdmin;
 
     FirebaseAuth mAuth;
 
@@ -26,6 +28,9 @@ public class login extends AppCompatActivity {
 
         emailLogin = findViewById(R.id.emailLogin);
         pwdLogin = findViewById(R.id.passwordLogin);
+
+        loginAsAdmin = (TextView) findViewById(R.id.adminlogin);
+
 
         mAuth = FirebaseAuth.getInstance();
     }
@@ -54,4 +59,12 @@ public class login extends AppCompatActivity {
         }
 
     }
+
+    public void adminLogin(View view){
+
+        Intent i = new Intent(getApplicationContext(), adminLogin.class);
+        startActivity(i);
+
+    }
+
 }

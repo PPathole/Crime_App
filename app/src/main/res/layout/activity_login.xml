@@ -39,7 +39,7 @@
         android:layout_height="77dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="94dp"
         android:background="#bd40ef"
         android:onClick="loginToHomepage"
         android:text="@string/loginuserbutton"
@@ -61,4 +61,17 @@
         android:textSize="40sp"
         android:textStyle="italic"
         app:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/adminlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:gravity="center"
+        android:onClick="adminLogin"
+        android:text="@string/adminlogin"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </RelativeLayout>

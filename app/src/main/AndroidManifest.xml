@@ -27,7 +27,9 @@
         <activity android:name=".homepage" />
         <activity android:name=".complaint" />
         <activity android:name=".sosActivity" />
-        <activity android:name=".aboutDeveloper"></activity>
+        <activity android:name=".aboutDeveloper" />
+        <activity android:name=".adminLogin" />
+        <activity android:name=".adminHome"></activity>
     </application>
 
 </manifest>

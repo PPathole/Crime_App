@@ -50,5 +50,10 @@
     <string name="toDo">TODO</string>
     <string name="todo">TODO</string>
     <string name="home">HomePage</string>
+    <string name="adminlogin">Sign in as Admin</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="loginasAdmin">Login</string>
+    <string name="admin_email">Admin Email</string>
+    <string name="admin_password">Admin Password</string>
 
 </resources>
