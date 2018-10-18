@@ -7,4 +7,11 @@
     android:background="#6200EE"
     tools:context=".adminHome">
 
+    <ListView
+        android:id="@+id/complaintList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp" />
 </RelativeLayout>

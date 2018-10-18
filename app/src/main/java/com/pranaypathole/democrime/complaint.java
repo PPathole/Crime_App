@@ -35,7 +35,7 @@ public class complaint extends AppCompatActivity {
 
 
 
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("Complaints");
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("CrimeApp");
     }
 
     public void submitReport(View view){
