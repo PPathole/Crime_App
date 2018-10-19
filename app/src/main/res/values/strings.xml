@@ -55,5 +55,6 @@
     <string name="loginasAdmin">Login</string>
     <string name="admin_email">Admin Email</string>
     <string name="admin_password">Admin Password</string>
+    <string name="LOG">Logout</string>
 
 </resources>
