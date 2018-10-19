@@ -15,12 +15,13 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class adminHome extends AppCompatActivity {
 
-    DatabaseReference mReference;
-    ArrayList<String> mComplaints;
-    ListView mListView;
+    private DatabaseReference mReference;
+    private ListView mListView;
+    private ArrayList<String> mArrayList = new ArrayList<>();
 
 
     @Override
@@ -28,16 +29,17 @@ public class adminHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_home);
 
-        mReference = FirebaseDatabase.getInstance().getReference().child("Complaints");
-        mListView = findViewById(R.id.complaintList);
-        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_list_item_1, mComplaints);
+        mReference = FirebaseDatabase.getInstance().getReference().child("Complaint");
+        mListView = (ListView) findViewById(R.id.complaintList);
+
+        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mArrayList);
         mListView.setAdapter(arrayAdapter);
 
         mReference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                String complaints = dataSnapshot.child("complaintBox").getValue(String.class).toUpperCase();
-                mComplaints.add(complaints);
+                String value = dataSnapshot.getValue(String.class);
+                mArrayList.add(value);
                 arrayAdapter.notifyDataSetChanged();
             }
 
@@ -61,6 +63,8 @@ public class adminHome extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 

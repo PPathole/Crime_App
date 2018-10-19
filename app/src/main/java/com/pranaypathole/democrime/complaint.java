@@ -35,7 +35,7 @@ public class complaint extends AppCompatActivity {
 
 
 
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("CrimeApp");
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("Complaint");
     }
 
     public void submitReport(View view){
@@ -48,7 +48,7 @@ public class complaint extends AppCompatActivity {
         String complaintBox = descriptionBox.getText().toString();
         mDialog.show();
         SaveData saveData = new SaveData(complaintBox);
-        mDatabaseReference.push().setValue(saveData);
+        mDatabaseReference.setValue(saveData);
         mDialog.dismiss();
         Toast.makeText(this, "Report Filed!", Toast.LENGTH_SHORT).show();
     }
