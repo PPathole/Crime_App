@@ -1,11 +1,15 @@
 package com.pranaypathole.democrime;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -68,5 +72,19 @@ public class adminHome extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.admin_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.Logout){
+            Intent logout = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(logout);
+            Toast.makeText(this, "Signing Out Admin...", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

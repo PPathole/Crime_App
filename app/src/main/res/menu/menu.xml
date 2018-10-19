@@ -2,9 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/aboutdeveloper"
-        android:title="@string/about_developer"></item>
+        android:title="@string/about_developer"
+        android:icon="@drawable/ic_perm_identity_black_24dp"></item>
     <item
         android:id="@+id/logout"
-        android:title="@string/logout"></item>
+        android:title="@string/logout"
+        android:icon="@drawable/ic_clear_all_black_24dp"></item>
 
 </menu>

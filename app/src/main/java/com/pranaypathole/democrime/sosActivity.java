@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class sosActivity extends AppCompatActivity {
 
@@ -32,5 +33,9 @@ public class sosActivity extends AppCompatActivity {
     public void contact(View view){
         Intent callintent = new Intent(Intent.ACTION_DIAL);
         startActivity(callintent);
+    }
+
+    public void FlashOn(View view){
+        Toast.makeText(this, "Slide on Notification Toggle & Turn on Flash File!", Toast.LENGTH_SHORT).show();
     }
 }

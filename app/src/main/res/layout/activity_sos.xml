@@ -32,6 +32,7 @@
         android:background="#bd40ef"
         android:drawableLeft="@drawable/ic_flash_on_black_24dp"
         android:drawableStart="@drawable/ic_flash_on_black_24dp"
+        android:onClick="FlashOn"
         android:text="@string/flash"
         android:textSize="20sp"
         android:textStyle="bold|italic" />
